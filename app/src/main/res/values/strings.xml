@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AuthLogin</string>
+    <string name="student_signin">Student signIn</string>
+    <string name="student_signup">Student signUp</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="course">Course</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up_here">Sign Up Here !</string>
+    <string name="sign_in_here">Sign In Here !</string>
 </resources>
