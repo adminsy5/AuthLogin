@@ -31,6 +31,7 @@ public class SignIn extends AppCompatActivity {
                 signIn();
             }
         });
+        binding.TextViewSignUp.setOnClickListener(v -> onBackPressed());
     }
 
     private void showToast(String Message)
@@ -54,13 +55,12 @@ public class SignIn extends AppCompatActivity {
 
     private void signIn()
     {
-        isLoading(true);
         String email=binding.EditEmail.getText().toString();
         String password= binding.EditPassword.getText().toString();
 
         boolean checkEmailPassword=db.checkEmailPassword(email,password);
         if(checkEmailPassword){
-            isLoading(false);
+            isLoading(true);
             showToast("Welcome ❤️");
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);

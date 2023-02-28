@@ -30,6 +30,7 @@ public class SignUp extends AppCompatActivity {
                 signUp();
             }
         });
+        binding.TextViewSignIn.setOnClickListener(v -> startActivity(new Intent(SignUp.this, SignIn.class)));
     }
 
     private void showToast(String Message)
