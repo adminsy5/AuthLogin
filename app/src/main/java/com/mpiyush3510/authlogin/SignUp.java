@@ -22,7 +22,6 @@ public class SignUp extends AppCompatActivity {
         db=new DbHelper(this);
         myMethods();
     }
-
     private void myMethods()
     {
         binding.BtnSignUp.setOnClickListener(v -> {
